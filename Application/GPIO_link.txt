@@ -1,0 +1,23 @@
+PA0 - NT PWM2
+PA1 - NT PWM1
+PA2 - Beep 
+PA3 - NT DATA
+PA4 - NT CLK
+PA5 - NT OUT
+PA6 - OLED SCL
+PA7 - OLED SDA
+
+PB5  - key Lift
+PB6  - Key Up
+PB7  - key cfm
+PB8  - Key Down
+PB9  - Key Right
+PB10 - DS3231 SCL
+PB11 - DS3231 SDA
+PB12 - NT IR
+PB13 - NT key lift
+PB14 - NT key right
+PB15 - NT LED
+
+PC13 - CoreLED
+

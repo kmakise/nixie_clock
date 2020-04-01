@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: zhang dong, Z-tech, LIC=EXJUH-WWE43-FW42N-YWFJK-JNC04-DVASX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5_ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\WorkSpace\Microcontroller\STM32F103C8T6\Nixie Tube\Program Project\MDK_ARM\STM32F103C8T6.uvprojx
+Project File Date:  03/27/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5_ARM\ARM\ARMCC\Bin'
+Build target 'stm32f103C8T6_mode'
+compiling AmadeusMain.c...
+..\Application\Amadeus\src\AmadeusMain.c(68): warning:  #1-D: last line of file ends without a newline
+  }
+..\Application\Amadeus\src\AmadeusMain.c: 1 warning, 0 errors
+compiling NixieApp.c...
+..\Application\Amadeus\src\NixieApp.c(291): warning:  #223-D: function "memcpy" declared implicitly
+  		memcpy(&timeVal,&TimeValue,sizeof(Time_Typedef));
+..\Application\Amadeus\src\NixieApp.c(294): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(str,"  20%02d/%02d/%02d",timeVal.year,timeVal.month,timeVal.date);
+..\Application\Amadeus\src\NixieApp.c(413): warning:  #223-D: function "memcpy" declared implicitly
+  		memcpy(&timeVal,&TimeValue,sizeof(Time_Typedef));
+..\Application\Amadeus\src\NixieApp.c(416): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(str,"    %02d:%02d:%02d",timeVal.hour,timeVal.minute,timeVal.second);
+..\Application\Amadeus\src\NixieApp.c(448): warning:  #111-D: statement is unreachable
+  				case 3:timeVal.minute = ((timeVal.minute%10) == 9)?(timeVal.minute/10)*10:timeVal.minute+1;break;break;
+..\Application\Amadeus\src\NixieApp.c(449): warning:  #111-D: statement is unreachable
+  				case 4:timeVal.second = ((timeVal.second/10) == 5)?timeVal.second%10:timeVal.second+10;break;break;
+..\Application\Amadeus\src\NixieApp.c(622): warning:  #1-D: last line of file ends without a newline
+  }
+..\Application\Amadeus\src\NixieApp.c: 7 warnings, 0 errors
+compiling oled.c...
+linking...
+Program Size: Code=16946 RO-data=4746 RW-data=128 ZI-data=2320  
+FromELF: creating hex file...
+".\Objects\NixieTube.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_stm32f103C8T6_mode
+  C:\Keil_v5_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
